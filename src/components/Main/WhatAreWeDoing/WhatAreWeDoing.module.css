@@ -11,11 +11,11 @@
     gap: 98px;
     padding: 55px 46px 90px 46px;
     border-radius: 50px;
-    background: #1B1B1B;
+    background: #1b1b1b;
     max-width: 878px;
 }
 .title {
-    color: #E2E2E2;
+    color: #e2e2e2;
     font-size: 32px;
     font-weight: 400;
 }
@@ -28,26 +28,24 @@
     display: flex;
     flex-direction: column;
     gap: 34px;
-
 }
 .textJun {
     max-width: 700px;
-    color: #FFF;
+    color: #fff;
     font-size: 64px;
     font-style: normal;
-    font-family: Onest,sans-serif;
+    font-family: Onest, sans-serif;
     font-weight: 400;
     line-height: 1.27em;
-
 }
-.btn{
-   display: flex;
+.btn {
+    display: flex;
     justify-content: center;
 }
 
 .textMentor {
     max-width: 727px;
-    color: #FFF;
+    color: #fff;
     font-size: 64px;
     font-weight: 200;
     line-height: 1.27em;
@@ -57,7 +55,7 @@
     width: 88%;
     padding: 28px 0;
     border-radius: 50px;
-    background: #CFF928;
+    background: #cff928;
     color: #000;
     text-align: center;
     font-size: 32px;
@@ -76,15 +74,15 @@
     display: flex;
     align-items: center;
     border-radius: 50px;
-    background: #CFF928;
+    background: #cff928;
 }
 
 .number {
     padding: 36px 25px;
     margin-right: 33px;
     border-radius: 40px;
-    background: #1B1B1B;
-    color: #CFF928;
+    background: #1b1b1b;
+    color: #cff928;
     font-size: 48px;
     font-weight: 400;
 }
@@ -131,8 +129,8 @@
         font-size: 42px;
         max-width: 538px;
     }
-   .button {
-       margin-left: 35px;
+    .button {
+        margin-left: 35px;
         width: 100%;
         padding: 19px 0;
         font-size: 20px;
@@ -159,7 +157,8 @@
     }
 }
 @media (max-width: 1275px) {
-    .textJun, .textMentor {
+    .textJun,
+    .textMentor {
         font-size: 41px;
     }
     .titleDev {

@@ -1,7 +1,7 @@
 .wrapper {
     padding: 27px 70px 11px;
     border-radius: 50px;
-    background: #1B1B1B;
+    background: #1b1b1b;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,17 +14,16 @@
 .btnArrow {
     padding: 15px 27px;
     border-radius: 40px;
-    background: #CFF928;
+    background: #cff928;
 }
 .line {
     max-width: 100%;
     height: 1px;
-    background: #CFF928;
+    background: #cff928;
 }
 .content {
     display: flex;
     justify-content: space-between;
-
 }
 .title {
     padding: 35px 0;
@@ -37,7 +36,7 @@
 }
 .text {
     max-width: 817px;
-    color: #FFF;
+    color: #fff;
     font-family: Onest, sans-serif;
     font-size: 24px;
     font-style: normal;

@@ -4,7 +4,7 @@
     gap: 24px;
 }
 
-.leftBlock{
+.leftBlock {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -17,21 +17,21 @@
     justify-content: space-between;
     padding: 23px 0 81px 47px;
     border-radius: 50px;
-    background: #1B1B1B;
+    background: #1b1b1b;
     height: 50%;
 }
-.textBlock  p{
+.textBlock p {
     max-width: 623px;
 }
 
 .title {
-    color: #E2E2E2;
+    color: #e2e2e2;
     font-size: 32px;
     font-weight: 400;
 }
 
 .text {
-    color: #FFF;
+    color: #fff;
     font-size: 24px;
     font-weight: 300;
     line-height: 39px;
@@ -40,7 +40,7 @@
 .imgBlock {
     padding: 83px 39px 84px 47px;
     border-radius: 50px;
-    background: #CFF928;
+    background: #cff928;
 }
 .blockRight {
     width: 50%;
@@ -52,7 +52,7 @@
     .container {
         gap: 15px;
     }
-    .leftBlock{
+    .leftBlock {
         gap: 23px;
     }
     .textBlock {
@@ -60,7 +60,7 @@
         border-radius: 32px;
         height: 40%;
     }
-    .textBlock  p{
+    .textBlock p {
         max-width: 402px;
     }
     .title {

@@ -3,7 +3,7 @@
     flex-direction: column;
     padding: 35px 45px;
     border-radius: 50px;
-    background: #CFF928;
+    background: #cff928;
 }
 
 .title {
@@ -88,7 +88,7 @@
     }
 }
 @media (max-width: 1275px) {
-    .text{
+    .text {
         font-size: 41px;
     }
     .textBtn {

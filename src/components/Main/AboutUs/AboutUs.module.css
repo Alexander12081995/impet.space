@@ -1,7 +1,7 @@
 .wrapper {
     padding: 35px 70px 120px 47px;
     border-radius: 50px;
-    background: #1B1B1B;
+    background: #1b1b1b;
 }
 
 .container {
@@ -13,12 +13,12 @@
     width: 50%;
 }
 .title {
-    color: #E2E2E2;
+    color: #e2e2e2;
     font-size: 32px;
     font-weight: 400;
 }
 
-.blockImg{
+.blockImg {
     display: flex;
     gap: 45px;
     margin: 7px 35px 0 0;
@@ -33,12 +33,12 @@
 }
 .text {
     margin-top: 84px;
-    color: #FFF;
+    color: #fff;
     font-size: 64px;
     font-weight: 400;
     text-transform: uppercase;
 }
-@media (max-width: 1670px){
+@media (max-width: 1670px) {
     .wrapper {
         padding: 22px 45px 54px 30px;
         border-radius: 32px;
@@ -53,7 +53,7 @@
         margin-top: 65px;
         font-size: 48px;
     }
-    .blockImg{
+    .blockImg {
         margin: 7px 22px 0 0;
     }
     .blockImg img {

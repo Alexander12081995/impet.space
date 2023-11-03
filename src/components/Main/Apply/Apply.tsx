@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import css from "./Apply.module.css";
 
@@ -11,12 +11,12 @@ export const Apply = () => {
             </div>
             <div className={css.blockImg}>
                 <div>
-                    <img src="/img/employee.png" alt="Participant"/>
+                    <img src="/img/employee.png" alt="Participant" />
                 </div>
                 <div>
-                    <img src="/img/Ceo.png" alt="Сustomer"/>
+                    <img src="/img/Ceo.png" alt="Сustomer" />
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
