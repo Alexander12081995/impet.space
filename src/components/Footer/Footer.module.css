@@ -1,0 +1,174 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 97px 82px 110px 47px;
+    border-radius: 50px 50px 0 0;
+    background: #1B1B1B;
+}
+.blockLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.politicText {
+    color: #FFF;
+    font-family: Onest, sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 54px;
+}
+.blockRight {
+    max-width: 889px;
+}
+.title {
+    color: #FFF;
+    font-family: Onest ,sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 38px;
+}
+.text {
+    color: #FFF;
+    font-family: Onest, sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 40px;
+}
+.question {
+    max-width: 628px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 53px;
+}
+
+.blockForm {
+    max-width: 758px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 27px;
+}
+.textInput {
+    color: #FFF;
+    font-family: Onest,sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.input {
+    width: 100%;
+    height: 48px;
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    background: transparent;
+}
+.input::placeholder {
+    color: #C1C1C1;
+    font-family: Onest,sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-left: 20px;
+}
+
+.btn {
+    display: flex;
+    width: 100%;
+    padding: 11px 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 1px solid #000;
+    background: #CFF928;
+    color: #000;
+    font-family: Onest, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 40px;
+}
+@media (max-width: 1670px) {
+    .wrapper {
+        padding: 61px 43px 93px 30px;
+        border-radius: 32px 32px 0 0;
+    }
+    .logo {
+        max-width: 128px;
+    }
+    .politicText {
+        font-size: 24px;
+        line-height: 35px;
+    }
+    .blockRight {
+        max-width: 584px;
+    }
+    .title {
+        font-size: 42px;
+        padding-bottom: 24px;
+    }
+    .text {
+        font-size: 24px;
+        line-height: 25px;
+    }
+    .question {
+        max-width: 420px;
+    }
+    .form {
+        gap: 30px;
+    }
+    .blockForm {
+        max-width: 489px;
+        gap: 12px;
+        padding-top: 25px;
+    }
+    .textInput {
+        font-size: 24px;
+    }
+    .input {
+        height: 27px;
+    }
+    .input::placeholder {
+        font-size: 16px;
+        line-height: 25px;
+        padding-left: 13px;
+    }
+    .btn {
+        padding: 8px 0;
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+@media (max-width: 1275px) {
+    .logo {
+        max-width: 124px;
+    }
+    .blockRight {
+        max-width: 565px;
+    }
+    .title{
+        font-size: 41px;
+    }
+    .blockForm {
+        max-width: 473px;
+    }
+    .text, .btn {
+        line-height: 24px;
+    }
+    .text {
+        padding-right: 40px;
+    }
+    .btn img {
+        height: 31px;
+    }
+    .form {
+        gap: 0;
+    }
+}

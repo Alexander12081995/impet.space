@@ -1,0 +1,168 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 72px;
+}
+
+.leftBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 98px;
+    padding: 55px 46px 90px 46px;
+    border-radius: 50px;
+    background: #1B1B1B;
+    max-width: 878px;
+}
+.title {
+    color: #E2E2E2;
+    font-size: 32px;
+    font-weight: 400;
+}
+.wrapperInvite {
+    display: flex;
+    flex-direction: column;
+    gap: 108px;
+}
+.blockInvite {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+
+}
+.textJun {
+    max-width: 700px;
+    color: #FFF;
+    font-size: 64px;
+    font-style: normal;
+    font-family: Onest,sans-serif;
+    font-weight: 400;
+    line-height: 1.27em;
+
+}
+.btn{
+   display: flex;
+    justify-content: center;
+}
+
+.textMentor {
+    max-width: 727px;
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 200;
+    line-height: 1.27em;
+}
+
+.button {
+    width: 88%;
+    padding: 28px 0;
+    border-radius: 50px;
+    background: #CFF928;
+    color: #000;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.developersBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.developer {
+    padding: 42px 52px;
+    max-width: 930px;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    background: #CFF928;
+}
+
+.number {
+    padding: 36px 25px;
+    margin-right: 33px;
+    border-radius: 40px;
+    background: #1B1B1B;
+    color: #CFF928;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.titleDev {
+    max-width: 690px;
+    color: #000;
+    font-size: 48px;
+    font-weight: 400;
+    border-bottom: 1px solid #000;
+}
+
+.text {
+    color: #000;
+    font-family: Onest, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 40px;
+}
+@media (max-width: 1670px) {
+    .container {
+        gap: 46px;
+    }
+    .leftBlock {
+        gap: 68px;
+        padding: 36px 70px 42px 30px;
+        border-radius: 32px;
+    }
+    .title {
+        font-size: 20px;
+    }
+    .wrapperInvite {
+        gap: 70px;
+    }
+    .blockInvite {
+        gap: 18px;
+    }
+    .textJun {
+        font-size: 42px;
+        max-width: 450px;
+    }
+    .textMentor {
+        font-size: 42px;
+        max-width: 538px;
+    }
+   .button {
+       margin-left: 35px;
+        width: 100%;
+        padding: 19px 0;
+        font-size: 20px;
+    }
+    .developersBlock {
+        gap: 38px;
+    }
+    .developer {
+        padding: 25px 33px;
+        border-radius: 32px;
+    }
+    .number {
+        padding: 25px 18px;
+        margin-right: 21px;
+        border-radius: 40px;
+        font-size: 30px;
+    }
+    .titleDev {
+        font-size: 32px;
+    }
+    .text {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+@media (max-width: 1275px) {
+    .textJun, .textMentor {
+        font-size: 41px;
+    }
+    .titleDev {
+        font-size: 31px;
+    }
+}

@@ -1,0 +1,150 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.leftBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 56px 47px 75px 47px;
+    border-radius: 50px;
+    background-color: #CFF928;
+    width: 50%;
+}
+.leftBlockGreen {
+    display: none;
+}
+.groupLogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.button {
+    border-radius: 50px;
+    padding: 15px 43px;
+    background: #000;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.title {
+    color: #000;
+    font-family: Onest, sans-serif;
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.23em;
+}
+
+.rightBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 50%;
+}
+
+.groupNav {
+    width: 100%;
+    padding: 57px 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 50px;
+    background: #1B1B1B;
+}
+
+.nav {
+    padding: 15px 22px;
+    border-radius: 50px;
+    border: 1px solid #FFF;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.link {
+    color: #FFF;
+}
+
+.img img{
+    width: 100%;
+}
+@media (max-width: 1919px){
+    .nav {
+        padding: 12px 15px;
+        font-size: 18px;
+    }
+}
+@media (max-width: 1670px) {
+    .container {
+        gap: 12px;
+    }
+    .leftBlock {
+        padding: 36px 31px 29px;
+        border-radius: 32px;
+    }
+    .groupLogo img{
+        width: 128px;
+    }
+    .title {
+        font-size: 80px;
+        max-width: 488px;
+        line-height: 1.30em;
+    }
+    .button {
+        padding: 9px 26px;
+        font-size: 16px;
+    }
+    .groupNav {
+        padding: 32px 9px;
+        border-radius: 32px;
+    }
+    .nav {
+        font-size: 14px;
+    }
+    .rightBlock {
+        gap: 12px;
+    }
+}
+@media (max-width: 1275px) {
+    .groupLogo img{
+        width: 124px;
+    }
+    .title {
+        font-size: 77px;
+    }
+}
+@media (max-width: 1024px) {
+    .rightBlock {
+        width: 100%;
+        border-radius: 25px;
+    }
+    .groupNav {
+        flex-wrap: wrap;
+        padding: 22px 19px;
+    }
+    .nav {
+        padding: 5px 0;
+        width: 195px;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 60px;
+        margin-top: 35px;
+
+    }
+    .leftBlock{
+        display: none;
+    }
+    .leftBlockGreen {
+        display: block;
+        padding: 27px 23px 23px 11px;
+        border-radius: 25px;
+        background-color: #CFF928;
+        width: 100%;
+    }
+}
