@@ -1,24 +1,17 @@
 "use client";
 
+import Image from "next/image";
 import css from "./Header.module.css";
 import Link from "next/link";
 
 const navigation = [
     {
-        text: "О НАС",
-        href: "/#about-us",
-    },
-    {
         text: "ЧТО МЫ ДЕЛАЕМ",
         href: "/#what-doing",
     },
     {
-        text: "ТЕХНОЛОГИИ",
+        text: "КАК МЫ РАБОТАЕМ",
         href: "/#technologie",
-    },
-    {
-        text: "СКОЛЬКО НАС",
-        href: "/#counter",
     },
 ];
 
@@ -27,10 +20,10 @@ export const Header = () => {
         <div className={css.container}>
             <div className={css.leftBlock}>
                 <div className={css.groupLogo}>
-                    <img src={"/img/logo.svg"} alt="logo" />
-                    <button className={css.button}>ПОДАТЬ ЗАЯВКУ</button>
+                    <Image src={"/img/logo.svg"} alt="logo" width={129} height={80} />
+                    <p className={css.logoTitle}>We realize your idea</p>
                 </div>
-                <p className={css.title}>ТВОРИ УЧИСЬ СОЗДАВАЙ</p>
+                <p className={css.title}>LEARN DEVELOP CREATE</p>
             </div>
             <div className={css.rightBlock}>
                 <ul className={css.groupNav}>
@@ -45,9 +38,9 @@ export const Header = () => {
                 <div className={css.leftBlockGreen}>
                     <div className={css.groupLogo}>
                         <img src={"/img/logo.svg"} alt="logo" />
-                        <button className={css.button}>ПОДАТЬ ЗАЯВКУ</button>
+                        <p className={css.logoTitle}>We realize your idea</p>
                     </div>
-                    <p className={css.title}>ТВОРИ УЧИСЬ СОЗДАВАЙ</p>
+                    <p className={css.title}>LEARN DEVELOP CREATE</p>
                 </div>
                 <div className={css.img}>
                     <img src={"/img/headerImg.png"} alt="img" />

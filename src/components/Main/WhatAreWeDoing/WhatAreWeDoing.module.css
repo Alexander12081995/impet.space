@@ -1,167 +1,260 @@
-.container {
+.block {
     display: flex;
     justify-content: space-between;
-    align-items: start;
-    gap: 72px;
+    align-items: stretch;
 }
 
 .leftBlock {
-    display: flex;
-    flex-direction: column;
-    gap: 98px;
-    padding: 55px 46px 90px 46px;
+    width: 47%;
+    padding: 56px 46px 74px;
     border-radius: 50px;
-    background: #1b1b1b;
-    max-width: 878px;
-}
-.title {
-    color: #e2e2e2;
-    font-size: 32px;
-    font-weight: 400;
-}
-.wrapperInvite {
-    display: flex;
-    flex-direction: column;
-    gap: 108px;
-}
-.blockInvite {
-    display: flex;
-    flex-direction: column;
-    gap: 34px;
-}
-.textJun {
-    max-width: 700px;
-    color: #fff;
-    font-size: 64px;
-    font-style: normal;
+    background: #1B1B1B;
+    color: #E2E2E2;
     font-family: Onest, sans-serif;
+    font-size: 32px;
+    font-style: normal;
     font-weight: 400;
-    line-height: 1.27em;
-}
-.btn {
-    display: flex;
-    justify-content: center;
+    line-height: normal;
 }
 
-.textMentor {
-    max-width: 727px;
-    color: #fff;
+.text1 {
+    margin-top: 96px;
+    color: #FFF;
     font-size: 64px;
-    font-weight: 200;
-    line-height: 1.27em;
+    max-width: 679px;
 }
 
-.button {
-    width: 88%;
-    padding: 28px 0;
-    border-radius: 50px;
-    background: #cff928;
+.btn {
+    margin: 35px auto 0;
+    padding: 27px 128px;
+    display: flex;
     color: #000;
     text-align: center;
+    font-family: Onest, sans-serif;
     font-size: 32px;
+    font-style: normal;
     font-weight: 300;
+    line-height: normal;
+    border-radius: 50px;
+    background: #CFF928;
+    border: 1px solid #CFF928;
 }
 
-.developersBlock {
+.rightBlock {
+    width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 50px;
 }
 
 .developer {
-    padding: 42px 52px;
-    max-width: 930px;
     display: flex;
+    justify-content: start;
     align-items: center;
+    gap: 33px;
+
+    width: 100%;
+    padding: 42px 52px;
     border-radius: 50px;
-    background: #cff928;
+    background: #CFF928;
 }
 
 .number {
-    padding: 36px 25px;
-    margin-right: 33px;
+    padding: 35px 30px;
+    color: #CFF928;
+
+    font-family: Onest, sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
     border-radius: 40px;
-    background: #1b1b1b;
-    color: #cff928;
-    font-size: 48px;
-    font-weight: 400;
+    background: #1B1B1B;
 }
 
-.titleDev {
-    max-width: 690px;
+.blockInfo {
+    width: 100%;
+}
+
+.title {
+    position: relative;
     color: #000;
+    font-family: Onest, sans-serif;
     font-size: 48px;
+    font-style: normal;
     font-weight: 400;
-    border-bottom: 1px solid #000;
+    line-height: normal;
 }
 
-.text {
+.title::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #000;
+}
+
+.description {
     color: #000;
     font-family: Onest, sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 300;
-    line-height: 40px;
+    line-height: 39.5px;
 }
-@media (max-width: 1670px) {
-    .container {
-        gap: 46px;
-    }
+
+@media (max-width: 1540px) {
+    
     .leftBlock {
-        gap: 68px;
-        padding: 36px 70px 42px 30px;
-        border-radius: 32px;
+        padding: 56px 46px 74px;
+        font-size: 28px;
     }
-    .title {
-        font-size: 20px;
+    
+    .text1 {
+        font-size: 60px;
+        max-width: 600px;
     }
-    .wrapperInvite {
-        gap: 70px;
+    
+    .btn {
+        margin: 31px auto 0;
+        padding: 25px 120px;
+        font-size: 28px;
     }
-    .blockInvite {
-        gap: 18px;
+    
+    .rightBlock {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
     }
-    .textJun {
-        font-size: 42px;
-        max-width: 450px;
-    }
-    .textMentor {
-        font-size: 42px;
-        max-width: 538px;
-    }
-    .button {
-        margin-left: 35px;
-        width: 100%;
-        padding: 19px 0;
-        font-size: 20px;
-    }
-    .developersBlock {
-        gap: 38px;
-    }
+    
     .developer {
-        padding: 25px 33px;
+        padding: 42px 52px;
+    }
+    
+    .number {
+        font-size: 44px;
+    }
+    
+    .title {
+        font-size: 44px;
+    }
+    
+    .description {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1364px) {
+    .leftBlock {
+        padding: 54px 44px 72px;
+        font-size: 26px;
+    }
+    
+    .text1 {
+        font-size: 54px;
+        max-width: 580px;
+    }
+}
+
+@media (max-width: 1280px) {
+    
+    .leftBlock {
+        width: 47%;
+        padding: 36px 30px 42px;
+        border-radius: 32px;
+        font-size: 20px;
+    }
+    
+    .text1 {
+        margin-top: 62px;
+        font-size: 42px;
+        max-width: 440px;
+    }
+    
+    .btn {
+        margin: 18px auto 0;
+        padding: 18px 81px;
+        font-size: 20px;
         border-radius: 32px;
     }
-    .number {
-        padding: 25px 18px;
-        margin-right: 21px;
-        border-radius: 40px;
-        font-size: 30px;
+    
+    .rightBlock {
+        gap: 30px;
     }
-    .titleDev {
+    
+    .developer {
+        gap: 21px;
+        padding: 27px 33px;
+        border-radius: 32px;
+    }
+    
+    .number {
+        padding: 22px 19px;
+        font-size: 31px;
+        border-radius: 25px;
+    }
+    
+    .title {
         font-size: 32px;
     }
-    .text {
+    
+    .description {
         font-size: 16px;
-        line-height: 26px;
+        line-height: 25px;
     }
 }
-@media (max-width: 1275px) {
-    .textJun,
-    .textMentor {
-        font-size: 41px;
+
+@media (max-width: 1024px) {
+    .block {
+        flex-direction: column;
     }
-    .titleDev {
-        font-size: 31px;
+    
+    .leftBlock {
+        width: 100%;
+        padding: 28px 23px 42px;
+        border-radius: 30px;
+        font-size: 16px;
+    }
+    
+    .text1 {
+        margin-top: 40px;
+        font-size: 30px;
+        max-width: 377px;
+    }
+    
+    .btn {
+        margin: 20px auto 0;
+        padding: 14px 65px;
+        font-size: 16px;
+        border-radius: 30px;
+    }
+    
+    .rightBlock {
+        margin-top: 10px;
+        width: 100%;
+        gap: 10px;
+    }
+    
+    .developer {
+        gap: 16px;
+        padding: 20px 25px;
+        border-radius: 30px;
+    }
+    
+    .number {
+        padding: 17px 14px;
+        font-size: 23px;
+        border-radius: 20px;
+    }
+    
+    .title {
+        font-size: 24px;
+    }
+    
+    .description {
+        font-size: 16px;
+        line-height: 19px;
     }
 }

@@ -13,7 +13,6 @@ import { Contact } from "@/components/Main/Contact/Contact";
 export const Main = () => {
     return (
         <div className={css.wrapper}>
-            <AboutUs />
             <WhatAreWeDoing />
             <Counter />
             <Motivation />
