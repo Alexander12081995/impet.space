@@ -3,7 +3,7 @@
     justify-content: space-between;
     padding: 97px 82px 110px 47px;
     border-radius: 50px 50px 0 0;
-    background: #1B1B1B;
+    background: #1b1b1b;
 }
 .blockLeft {
     display: flex;
@@ -11,7 +11,7 @@
     justify-content: space-between;
 }
 .politicText {
-    color: #FFF;
+    color: #fff;
     font-family: Onest, sans-serif;
     font-size: 36px;
     font-style: normal;
@@ -22,8 +22,8 @@
     max-width: 889px;
 }
 .title {
-    color: #FFF;
-    font-family: Onest ,sans-serif;
+    color: #fff;
+    font-family: Onest, sans-serif;
     font-size: 64px;
     font-style: normal;
     font-weight: 400;
@@ -31,7 +31,7 @@
     padding-bottom: 38px;
 }
 .text {
-    color: #FFF;
+    color: #fff;
     font-family: Onest, sans-serif;
     font-size: 36px;
     font-style: normal;
@@ -55,8 +55,8 @@
     padding-top: 27px;
 }
 .textInput {
-    color: #FFF;
-    font-family: Onest,sans-serif;
+    color: #fff;
+    font-family: Onest, sans-serif;
     font-size: 36px;
     font-style: normal;
     font-weight: 500;
@@ -66,12 +66,12 @@
     width: 100%;
     height: 48px;
     border-radius: 10px;
-    border: 1px solid #FFF;
+    border: 1px solid #fff;
     background: transparent;
 }
 .input::placeholder {
-    color: #C1C1C1;
-    font-family: Onest,sans-serif;
+    color: #c1c1c1;
+    font-family: Onest, sans-serif;
     font-size: 13px;
     font-style: normal;
     font-weight: 500;
@@ -87,7 +87,7 @@
     justify-content: center;
     border-radius: 50px;
     border: 1px solid #000;
-    background: #CFF928;
+    background: #cff928;
     color: #000;
     font-family: Onest, sans-serif;
     font-size: 24px;
@@ -153,13 +153,14 @@
     .blockRight {
         max-width: 565px;
     }
-    .title{
+    .title {
         font-size: 41px;
     }
     .blockForm {
         max-width: 473px;
     }
-    .text, .btn {
+    .text,
+    .btn {
         line-height: 24px;
     }
     .text {

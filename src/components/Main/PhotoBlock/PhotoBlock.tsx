@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
-import css from "./PhotoBlock.module.css"
+import css from "./PhotoBlock.module.css";
 
 export const PhotoBlock = () => {
-    return(
+    return (
         <div className={css.wrapper}>
-            <img src="/img/PhotoBlock.png" alt="photo"/>
+            <img src="/img/PhotoBlock.png" alt="photo" />
         </div>
-    )
-}
+    );
+};
