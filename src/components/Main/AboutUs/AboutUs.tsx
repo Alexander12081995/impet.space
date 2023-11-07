@@ -1,28 +1,33 @@
 "use client";
 
+import { useScopedI18n } from "@/locales/client";
 import css from "./AboutUs.module.css";
+import { Container } from "@/components/common/layout/Container";
 
 export const AboutUs = () => {
+
+    const t = useScopedI18n("blocks.aboutUs");
+
     return (
-        <div className={css.wrapper} id="about-us">
-            <div className={css.container}>
-                <div className={css.blockAbout}>
-                    <h2 className={css.title}>О НАС</h2>
-                    <p className={css.text}>
-                        МЫ - ГРУППА IT-ЭНТУЗИАСТОВ, объединённых целью дать практические знания junior-специалистам и
-                        ускорить получение ими первого оффера
-                    </p>
+        <Container>
+            <div className={css.block} id="aboutUs">
+                <p className={css.title}>{t("title")}</p>
+                <div className={css.leftBlock}>
+                    <p>{t("text")}</p>
+                    <p>{t("subText")}</p>
                 </div>
 
-                <div className={css.blockImg} id={"aboutUs"}>
-                    <div>
-                        <img src={"/img/Mentoring.png"} alt="mentoring" />
+                <div className={css.rightBlock}>
+                    <div className={css.image}>
+                        <img src={"/image/mentoring.png"} alt="mentoring" className={css.img}/>
+                        <p className={css.description}>{t("descriptionImg1")}</p>
                     </div>
-                    <div>
-                        <img src={"/img/IT.png"} alt="IT" />
+                    <div className={css.image}>
+                        <img src={"/image/itProject.jpg"} alt="itProject" className={`${css.img} ${css.opacity}`}/>
+                        <p className={css.description}>{t("descriptionImg2")}</p>
                     </div>
                 </div>
             </div>
-        </div>
+        </Container>
     );
 };
