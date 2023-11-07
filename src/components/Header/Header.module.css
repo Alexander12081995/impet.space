@@ -18,8 +18,7 @@
 }
 .groupLogo {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    justify-content: space-between;
 }
 
 .logoTitle {
@@ -66,7 +65,7 @@
     background: #1b1b1b;
 }
 
-.nav {
+.link {
     width: 90%;
     padding: 15px 22px;
     border-radius: 50px;
@@ -74,9 +73,6 @@
     font-size: 24px;
     font-weight: 400;
     text-align: center;
-}
-
-.link {
     color: #fff;
 }
 
@@ -84,7 +80,7 @@
     width: 100%;
 }
 @media (max-width: 1919px) {
-    .nav {
+    .link {
         padding: 12px 15px;
         font-size: 18px;
     }
@@ -113,7 +109,7 @@
         padding: 32px 9px;
         border-radius: 32px;
     }
-    .nav {
+    .link {
         font-size: 14px;
     }
     .rightBlock {
@@ -144,7 +140,7 @@
         flex-wrap: wrap;
         padding: 22px 19px;
     }
-    .nav {
+    .link {
         padding: 5px 0;
         width: 195px;
         text-align: center;

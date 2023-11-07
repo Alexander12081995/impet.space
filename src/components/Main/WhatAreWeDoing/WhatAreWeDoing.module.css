@@ -221,7 +221,8 @@
     .text1 {
         margin-top: 40px;
         font-size: 30px;
-        max-width: 377px;
+        max-width: 100%;
+        text-align: center;
     }
     
     .btn {

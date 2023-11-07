@@ -3,44 +3,61 @@
 import Image from "next/image";
 import css from "./Header.module.css";
 import Link from "next/link";
+import LocalSwitcher from "../common/LocalSwitcher/LocalSwitcher";
+import { useI18n, useScopedI18n, I18nProviderClient } from "@/locales/client";
 
-const navigation = [
-    {
-        text: "ЧТО МЫ ДЕЛАЕМ",
-        href: "/#what-doing",
-    },
-    {
-        text: "КАК МЫ РАБОТАЕМ",
-        href: "/#technologie",
-    },
-];
+export const Header = ({params}: {params: {locale: string}}) => {
 
-export const Header = () => {
+    const t = useScopedI18n("header")
+
+    const navigation = [
+        {
+            text: t("nav.weAre"),
+            href: `${params.locale}/#aboutUs`,
+        },
+        {
+            text: t("nav.give"),
+            href: `${params.locale}/#what-doing`,
+        },
+        {
+            text: t("nav.work"),
+            href: "/#technologie",
+        }
+    ];
+
     return (
-        <div className={css.container}>
+            <div className={css.container}>
             <div className={css.leftBlock}>
                 <div className={css.groupLogo}>
-                    <Image src={"/img/logo.svg"} alt="logo" width={129} height={80} />
-                    <p className={css.logoTitle}>We realize your idea</p>
+                    <div>
+                        <Image src={"/img/logo.svg"} alt="logo" width={129} height={80} />
+                        <p className={css.logoTitle}>{t("title")}</p>
+                    </div>
+                    <div>
+                        <LocalSwitcher/>
+                    </div>
                 </div>
-                <p className={css.title}>LEARN DEVELOP CREATE</p>
+                <p className={css.title}>{t("subTitle")}</p>
             </div>
             <div className={css.rightBlock}>
                 <ul className={css.groupNav}>
                     {navigation.map((item, index) => (
-                        <li key={index} className={css.nav}>
-                            <Link href={item.href} className={css.link}>
+                            <Link href={item.href} className={css.link} key={index}>
                                 {item.text}
                             </Link>
-                        </li>
                     ))}
                 </ul>
                 <div className={css.leftBlockGreen}>
-                    <div className={css.groupLogo}>
-                        <img src={"/img/logo.svg"} alt="logo" />
-                        <p className={css.logoTitle}>We realize your idea</p>
+                <div className={css.groupLogo}>
+                    <div>
+                    <img src={"/img/logo.svg"} alt="logo" />
+                        <p className={css.logoTitle}>{t("title")}</p>
                     </div>
-                    <p className={css.title}>LEARN DEVELOP CREATE</p>
+                    <div>
+                        <LocalSwitcher/>
+                    </div>
+                </div>
+                    <p className={css.title}>{t("subTitle")}</p>
                 </div>
                 <div className={css.img}>
                     <img src={"/img/headerImg.png"} alt="img" />

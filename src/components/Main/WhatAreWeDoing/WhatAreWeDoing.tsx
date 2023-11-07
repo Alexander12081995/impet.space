@@ -1,7 +1,8 @@
 "use client";
 
-import { Container } from "@/components/layout/Container";
+import { Container } from "@/components/common/layout/Container";
 import css from "./WhatAreWeDoing.module.css";
+import { useScopedI18n } from "@/locales/client";
 
 const developers = [
     { number: "1", title: "Developers", description: "C#, Java, Node.js, Python, JS" },
@@ -24,17 +25,19 @@ const developers = [
 
 
 export const WhatAreWeDoing = () => {
+
+    const t = useScopedI18n("blocks.whatAreWeDoing");
+
     return (
         <div id="what-doing">
             <Container>
                 <div className={css.block}>
                     <div className={css.leftBlock}>
-                        <p>WHAT WE DO?</p>
-                        <p className={css.text1}>WE HELP JUNIOR SPECIALISTS GAIN EXPERIENCE ON A REAL PROJECT UNDER THE GUIDANCE OF MENTORS</p>
-                        <button className={css.btn}>FOR JUNIORS</button>
-                        <p className={css.text1}>WE GIVE EXPERIENCED PROFESSIONALS THE OPPORTUNITY TO GAIN MENTORING EXPERIENCE. 
-                            SHARE EXPERTISE AND DEVELOPER THEIR MENTOR COMPETENCIES</p>
-                        <button className={css.btn}>FOR MENTORS</button>
+                        <p>{t("title")}</p>
+                        <p className={css.text1}>{t("textJun")}</p>
+                        <button className={css.btn}>{t("btnJun")}</button>
+                        <p className={css.text1}>{t("textMent")}</p>
+                        <button className={css.btn}>{t("btnMent")}</button>
                     </div>
     
                     <ul className={css.rightBlock}>
