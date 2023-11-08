@@ -21,7 +21,7 @@ export const Header = ({params}: {params: {locale: string}}) => {
         },
         {
             text: t("nav.work"),
-            href: "/#technologie",
+            href: `${params.locale}/#technologie`
         }
     ];
 

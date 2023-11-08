@@ -22,6 +22,23 @@ export default {
                textMent: "WE GIVE EXPERIENCED PROFESSIONALS THE OPPORTUNITY TO GAIN MENTORING EXPERIENCE. SHARE EXPERTISE AND DEVELOPER THEIR MENTOR COMPETENCIES",
                btnJun: "FOR JUNIORS",
                btnMent: "FOR MENTORS"
+            },
+            howWeWork: {
+               title: "HOW WE WORK",
+               text: "WE CREATE TEAMS OF JUNIOR SPECIALISTS WHO WORK ON REAL PROJECTS UNDER THE GUIDANCE OF EXPERIENCED MENTORS"
+            },
+            counter: {
+               title: "HOW BIG WE ARE?",
+               text: "Our community is growing and developing rapidly. Our team is dedicated, friendly and active people who strive to improve the world through ideas."
+            },
+            apply: {
+               title: "IF YOU ARE",
+               descriptionImg1: "MENTOR",
+               descriptionImg2: "JUNIOR",
+               descriptionImg3: "CUSTOMER",
+            },
+            contact: {
+               title: "LEAVE A REQUEST FOR PARTICIPATION"
             }
         }
 } as const 
