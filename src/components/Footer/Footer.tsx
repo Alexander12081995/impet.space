@@ -12,7 +12,7 @@ export const Footer = () => {
         <Container>
         <div className={css.block}>
             <div className={css.leftBlock}>
-                <img src={"/image/logoFooter.svg"} alt={"logo"}/>
+                <img src={"/image/logoFooter.png"} alt={"logo"}/>
             </div>
 
             <div className={css.rightBlock}>
