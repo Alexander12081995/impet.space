@@ -15,12 +15,10 @@ export const Main = () => {
         <div className={css.wrapper}>
             <AboutUs/>
             <WhatAreWeDoing />
-            <Counter />
             <Motivation />
-            <Technologies />
             <PhotoBlock />
+            <Counter />
             <Apply />
-            <Contact />
         </div>
     );
 };
