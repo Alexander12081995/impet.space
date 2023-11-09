@@ -4,7 +4,7 @@ import Image from "next/image";
 import css from "./Header.module.css";
 import Link from "next/link";
 import LocalSwitcher from "../common/LocalSwitcher/LocalSwitcher";
-import { useI18n, useScopedI18n, I18nProviderClient } from "@/locales/client";
+import { useScopedI18n } from "@/locales/client";
 
 export const Header = ({params}: {params: {locale: string}}) => {
 
@@ -30,7 +30,7 @@ export const Header = ({params}: {params: {locale: string}}) => {
             <div className={css.leftBlock}>
                 <div className={css.groupLogo}>
                     <div>
-                        <Image src={"/img/logo.svg"} alt="logo" width={129} height={80} />
+                        <Image src={"/image/logo.svg"} alt="logo" width={129} height={80} />
                         <p className={css.logoTitle}>{t("title")}</p>
                     </div>
                     <div>
@@ -50,7 +50,7 @@ export const Header = ({params}: {params: {locale: string}}) => {
                 <div className={css.leftBlockGreen}>
                 <div className={css.groupLogo}>
                     <div>
-                    <img src={"/img/logo.svg"} alt="logo" />
+                    <img src={"/image/logo.svg"} alt="logo" />
                         <p className={css.logoTitle}>{t("title")}</p>
                     </div>
                     <div>
@@ -60,7 +60,7 @@ export const Header = ({params}: {params: {locale: string}}) => {
                     <p className={css.title}>{t("subTitle")}</p>
                 </div>
                 <div className={css.img}>
-                    <img src={"/img/headerImg.png"} alt="img" />
+                    <img src={"/image/headerImg.png"} alt="img" />
                 </div>
             </div>
         </div>

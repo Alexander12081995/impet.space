@@ -13,7 +13,7 @@ export const Apply = () => {
             <div className={css.block}>
                 <p className={css.title}>{t("title")}</p>
                 <div className={css.wrapperImg}>
-                    <img src={"/image/men.png"} alt="men" className={css.img}/>
+                    <img src={"/image/mentor.jpg"} alt="men" className={css.img}/>
                     <p className={css.text}>{t("descriptionImg1")}</p>
                 </div>
                 <div className={css.wrapperImg}>

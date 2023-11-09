@@ -4,14 +4,14 @@
     align-items: end;
     padding: 35px 70px 192px 47px;
     border-radius: 50px;
-    background: #1B1B1B;
+    background: #1b1b1b;
 }
 
 .title {
     position: absolute;
     top: 35px;
     left: 47px;
-    color: #E2E2E2;
+    color: #e2e2e2;
     font-family: Onest, sans-serif;
     font-size: 32px;
     font-weight: 400;
@@ -19,7 +19,7 @@
 
 .leftBlock {
     width: 47%;
-    color: #FFF;
+    color: #fff;
     font-family: Onest, sans-serif;
     font-size: 64px;
     font-weight: 400;
@@ -43,7 +43,7 @@
     bottom: 107px;
     left: 50%;
     transform: translate(-50%);
-    color: #FFF;
+    color: #fff;
     font-family: Onest, sans-serif;
     font-size: 48px;
     font-weight: 400;
@@ -96,33 +96,33 @@
         padding: 22px 44px 108px 29px;
         border-radius: 31px;
     }
-    
+
     .title {
         top: 22px;
         left: 29px;
         font-size: 20px;
     }
-    
+
     .leftBlock {
         margin-top: 50px;
         font-size: 42px;
     }
-    
+
     .rightBlock {
         margin-top: 93px;
         gap: 29px;
     }
-    
+
     .image {
         max-width: 273px;
     }
-    
+
     .description {
         width: 200px;
         bottom: 67px;
         font-size: 30px;
     }
-    
+
     .image .img {
         height: 448px;
         border-radius: 124px;
@@ -135,76 +135,39 @@
         padding: 22px 30px 26px;
         border-radius: 25px;
     }
-    
+
     .title {
         top: 22px;
         left: 30px;
         font-size: 16px;
     }
-    
+
     .leftBlock {
-        width: 90%;
+        width: 100%;
         margin-top: 29px;
         font-size: 30px;
+        text-align: center;
     }
-    
+
     .rightBlock {
         margin: 10px auto 0;
         display: flex;
         gap: 34px;
     }
-    
+
     .image {
         max-width: 186px;
     }
-    
+
     .description {
         width: 130px;
         bottom: 44px;
         font-size: 20px;
     }
-    
+
     .image .img {
         max-width: 100%;
         height: 238px;
         border-radius: 125px;
     }
 }
-
-
-
-
-
-/* @media (max-width: 1670px) {
-    .wrapper {
-        padding: 22px 45px 54px 30px;
-        border-radius: 32px;
-    }
-    .blockAbout {
-        width: 46%;
-    }
-    .title {
-        font-size: 20px;
-    }
-    .text {
-        margin-top: 65px;
-        font-size: 48px;
-    }
-    .blockImg {
-        margin: 7px 22px 0 0;
-    }
-    .blockImg img {
-        width: 107%;
-    }
-}
-@media (max-width: 1275px) {
-    .text {
-        font-size: 46px;
-    }
-}
-@media (max-width: 1024px) {
-    .wrapper {
-        padding: 21px 15px 26px 30px;
-        border-radius: 32px;
-    }
-}  */

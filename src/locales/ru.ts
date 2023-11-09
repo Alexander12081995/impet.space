@@ -1,6 +1,6 @@
 export default {
     header: {
-        title: "Мы реализуем твои идеи",
+        title: "We realize your idea",
         subTitle: "ТВОРИ УЧИСЬ СОЗДАВАЙ",
         nav: {
             work: "КАК МЫ РАБОТАЕМ",
