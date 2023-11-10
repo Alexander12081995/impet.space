@@ -6,11 +6,11 @@ import { Motivation } from "@/components/Main/Motivation/Motivation";
 import { PhotoBlock } from "@/components/Main/PhotoBlock/PhotoBlock";
 import { Apply } from "@/components/Main/Apply/Apply";
 
-export const Main = () => {
+export const Main = ({ params }: { params: { locale: string } }) => {
     return (
         <div className={css.wrapper}>
-            <AboutUs/>
-            <WhatAreWeDoing />
+            <AboutUs />
+            <WhatAreWeDoing params={params} />
             <Motivation />
             <PhotoBlock />
             <Counter />

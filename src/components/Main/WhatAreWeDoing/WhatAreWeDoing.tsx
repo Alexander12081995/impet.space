@@ -3,6 +3,7 @@
 import { Container } from "@/components/common/layout/Container";
 import css from "./WhatAreWeDoing.module.css";
 import { useScopedI18n } from "@/locales/client";
+import Link from "next/link";
 
 const developers = [
     { number: "1", title: "Developers", description: "C#, Java, Node.js, Python, JS" },
@@ -18,14 +19,12 @@ const developers = [
         title: "Business Analysts",
         // description: "Помогать бизнесу достигать поставленных целей. Знать все аспекты IT.",
     },
-    { number: "6", title: "QA Engineers", /*description: "Обеспечение качества работы продукта."*/ },
-    { number: "7", title: "Product Managers", /*description: "Аналитика и анализ конкурентов."*/ },
-    { number: "8", title: "DevOps", /*description: "Аналитика и анализ конкурентов."*/ },
+    { number: "6", title: "QA Engineers" /*description: "Обеспечение качества работы продукта."*/ },
+    { number: "7", title: "Product Managers" /*description: "Аналитика и анализ конкурентов."*/ },
+    { number: "8", title: "DevOps" /*description: "Аналитика и анализ конкурентов."*/ },
 ];
 
-
-export const WhatAreWeDoing = () => {
-
+export const WhatAreWeDoing = ({ params }: { params: { locale: string } }) => {
     const t = useScopedI18n("blocks.whatAreWeDoing");
 
     return (
@@ -35,17 +34,19 @@ export const WhatAreWeDoing = () => {
                     <div className={css.leftBlock}>
                         <p>{t("title")}</p>
                         <p className={css.text1}>{t("textJun")}</p>
-                        <button className={css.btn}>{t("btnJun")}</button>
+                        <Link href={`${params.locale}/#footer`}>
+                            <button className={css.btn}>{t("btnJun")}</button>
+                        </Link>
                         <p className={css.text1}>{t("textMent")}</p>
-                        <button className={css.btn}>{t("btnMent")}</button>
+                        <Link href={`${params.locale}/#footer`}>
+                            <button className={css.btn}>{t("btnMent")}</button>
+                        </Link>
                     </div>
-    
+
                     <ul className={css.rightBlock}>
-                        {developers.map(({number, title, description}) => (
+                        {developers.map(({ number, title, description }) => (
                             <li key={number} className={css.developer}>
-                                <div className={css.number}>
-                                    {number}
-                                </div>
+                                <div className={css.number}>{number}</div>
                                 <div className={css.blockInfo}>
                                     <p className={css.title}>{title}</p>
                                     <p className={css.description}>{description}</p>
@@ -56,5 +57,5 @@ export const WhatAreWeDoing = () => {
                 </div>
             </Container>
         </div>
-    )
-}
+    );
+};
