@@ -5,6 +5,7 @@ import css from "./Main.module.css";
 import { Motivation } from "@/components/Main/Motivation/Motivation";
 import { PhotoBlock } from "@/components/Main/PhotoBlock/PhotoBlock";
 import { Apply } from "@/components/Main/Apply/Apply";
+import { Reviews } from "./Reviews/Reviews";
 
 export const Main = ({ params }: { params: { locale: string } }) => {
     return (
@@ -14,6 +15,7 @@ export const Main = ({ params }: { params: { locale: string } }) => {
             <Motivation />
             <PhotoBlock />
             <Counter />
+            <Reviews />
             <Apply />
         </div>
     );

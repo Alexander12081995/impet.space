@@ -1,0 +1,84 @@
+.wrapper {
+    position: relative;
+    padding: 128px 100px;
+    border-radius: 50px;
+    background: #cff928;
+}
+.title {
+    position: absolute;
+    left: 47px;
+    top: 35px;
+    color: #1b1b1b;
+    font-family: Onest, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.reviews {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 100px;
+}
+.leftBlock {
+    width: 100%;
+    max-width: 674px;
+    height: 100%;
+
+    color: #141414;
+    font-family: Onest, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+}
+.review {
+    max-height: 704px;
+    overflow: overlay;
+}
+.review::-webkit-scrollbar {
+    display: none;
+}
+.mentor {
+    margin-top: 60px;
+    font-weight: 600;
+}
+
+.listReviews {
+    padding: 60px 47px;
+    width: 100%;
+    max-width: 910px;
+    border-radius: 50px;
+    background: #1b1b1b;
+}
+.reviewJun {
+    max-width: 522px;
+    max-height: 650px;
+    color: #fff;
+    font-family: Onest, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%;
+    overflow: overlay;
+}
+.reviewJun::-webkit-scrollbar {
+    display: none;
+}
+.reviewJunBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 47px;
+}
+.junior {
+    margin-top: 33px;
+    color: #c1c1c1;
+    font-family: Onest, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
