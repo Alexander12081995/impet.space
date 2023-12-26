@@ -54,6 +54,7 @@
 }
 .reviewJun {
     max-width: 522px;
+    min-width: 400px;
     max-height: 650px;
     color: #fff;
     font-family: Onest, sans-serif;
