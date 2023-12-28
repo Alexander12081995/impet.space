@@ -83,3 +83,159 @@
     line-height: normal;
     text-transform: uppercase;
 }
+.arrow {
+    width: 100px;
+    height: 59px;
+    cursor: pointer;
+}
+
+@media (max-width: 1670px) {
+    .wrapper {
+        padding: 80px 64px;
+        border-radius: 32px;
+    }
+    .title {
+        left: 30px;
+        top: 22px;
+        font-size: 20px;
+    }
+    .reviews {
+        gap: 73px;
+    }
+    .leftBlock {
+        max-width: 423px;
+        font-size: 16px;
+    }
+    .review {
+        max-height: 460px;
+    }
+    .mentor {
+        margin-top: 40px;
+    }
+
+    .listReviews {
+        padding: 38px 30px;
+        max-width: 590px;
+        border-radius: 32px;
+    }
+    .reviewJun {
+        max-width: 340px;
+        min-width: 300px;
+        max-height: 400px;
+        font-size: 16px;
+    }
+    .reviewJunBlock {
+        gap: 30px;
+    }
+    .junior {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    .arrow {
+        width: 64px;
+        height: 38px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .wrapper {
+        padding: 79px 62px;
+        border-radius: 31px;
+    }
+    .title {
+        left: 29px;
+        top: 22px;
+        font-size: 20px;
+    }
+    .reviews {
+        gap: 62px;
+    }
+    .leftBlock {
+        max-width: 410px;
+    }
+    .review {
+        max-height: 442px;
+    }
+    .mentor {
+        margin-top: 37px;
+    }
+
+    .listReviews {
+        padding: 37px 29px;
+        max-width: 568px;
+        border-radius: 31px;
+    }
+    .reviewJun {
+        max-width: 325px;
+        min-width: 250px;
+        max-height: 400px;
+    }
+    .reviewJunBlock {
+        gap: 29px;
+    }
+    .junior {
+        margin-top: 22px;
+    }
+    .arrow {
+        width: 62px;
+        height: 37px;
+    }
+}
+@media (max-width: 1024px) {
+    .wrapper {
+        padding: 20px 16px;
+        border-radius: 25px;
+    }
+    .title {
+        left: 16px;
+        top: 20px;
+        font-size: 16px;
+    }
+    .reviews {
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        gap: 20px;
+    }
+    .leftBlock {
+        margin-top: 36px;
+        max-width: 100%;
+        font-size: 14px;
+    }
+    .review {
+        max-height: 360px;
+    }
+    .mentor {
+        margin-top: 16px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .listReviews {
+        padding: 30px 16px;
+        max-width: 992px;
+        border-radius: 12px;
+    }
+    .reviewJun {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        min-width: 100%;
+        height: 360px;
+        max-height: 360px;
+
+        font-size: 14px;
+    }
+    .reviewJunBlock {
+        gap: 12px;
+    }
+    .junior {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .arrow {
+        width: 20px;
+        height: 14px;
+    }
+}

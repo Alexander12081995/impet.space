@@ -1,9 +1,23 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import css from "./reviews.module.css";
 import { Container } from "@/components/common/layout/Container";
 import { reviews } from "@/data/reviews";
 
 export const Reviews = () => {
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const handleNextComment = () => {
+        if (currentIndex < reviews[0].reviews.length - 1) {
+            setCurrentIndex(currentIndex + 1);
+        }
+    };
+
+    const handlePrevComment = () => {
+        if (currentIndex > 0) {
+            setCurrentIndex(currentIndex - 1);
+        }
+    };
     return (
         <Container>
             <div className={css.wrapper}>
@@ -13,85 +27,55 @@ export const Reviews = () => {
                         <li key={id} className={css.reviews}>
                             <div className={css.leftBlock}>
                                 <p className={css.review}>
-                                    Я Senior Java-разработчик в крупной компании. После достижения определённого уровня
-                                    профессионализма в разработке мне стало интересно «прокачать» свои навыки
-                                    наставника, ментора, чтобы понять, получится ли у меня эффективно передавать свой
-                                    опыт и знания разработчикам, которые только начинают свой путь в профессии. Такую
-                                    возможность мне предоставила площадка Impet Space.
-                                    <br />
-                                    <br />
-                                    Сотрудничество с площадкой стало моим первым опытом в качестве ментора. Мои
-                                    начальные опасения относительно организации процесса и профиля участников, к
-                                    счастью, не подтвердились: коллектив проявил исключительно дружелюбный характер. Все
-                                    ребята были глубоко мотивированы и с энтузиазмом воспринимали все мои советы и
-                                    рекомендации, направленные на совершенствование их знаний и умений на будущем
-                                    профессиональном пути. За время, проведенное вместе, они значительно расширили свои
-                                    навыки и сейчас я с уверенностью могу заявить, что они готовы к решению сложных
-                                    задач наравне с более опытными разработчиками.
-                                    <br />
-                                    <br />
-                                    Помимо пользы для junior-разработчиков, я извлек из процесса обучения ценные уроки и
-                                    для себя: осознал, как правильно структурировать обучение, определять наиболее
-                                    эффективные методы, способные привлечь интерес и ускорить усвоение материала. Мне
-                                    стало ясно, что за короткий промежуток времени я могу поделиться накопленным опытом
-                                    и направить начинающих разработчиков по проверенным путям, что поможет им избежать
-                                    многих трудностей, с которыми я сталкивался на начальном этапе своей карьеры. Ведь,
-                                    как известно, уроки, полученные из чужих ошибок, позволяют обучаться более быстро и
-                                    экономно.
-                                    <br />
-                                    <br />
-                                    Полагаю, что ментор на площадке Impet Space получает возможность успешно развивать
-                                    свои Soft Skills, что поможет ему выступать в качестве лида одного из технических
-                                    или менеджерских направлений работы компании и расти в карьере
+                                    {review.split("\n").map((line, i) => (
+                                        <React.Fragment key={i}>
+                                            {line}
+                                            <br />
+                                        </React.Fragment>
+                                    ))}
                                 </p>
                                 <p className={css.mentor}>
-                                    Константин,
-                                    <br />
-                                    Ментор площадки Impet Space
-                                    <br />
-                                    группы Java-разработчиков
+                                    {mentor.split("\n").map((line, i) => (
+                                        <React.Fragment key={i}>
+                                            {line}
+                                            <br />
+                                        </React.Fragment>
+                                    ))}
                                 </p>
                             </div>
 
                             <div className={css.listReviews}>
                                 <div className={css.reviewJunBlock}>
-                                    <img src="/image/buttonLeft.svg" alt="arrow left" />
+                                    <img
+                                        src="/image/buttonLeft.svg"
+                                        alt="arrow left"
+                                        className={css.arrow}
+                                        onClick={handlePrevComment}
+                                    />
                                     <div>
                                         <p className={css.reviewJun}>
-                                            Хочу оставить отзыв о{" "}
-                                            <span style={{ color: "#CFF928" }}>менторе Константине!</span>
-                                            <br />Я был менти Константина на протяжении 2-х месяцев. Он проводил
-                                            регулярные созвоны, в ходе которых мы разбирали вопросы с собеседований и
-                                            углублённо изучали вопросы разработки на Java. Константин также делал
-                                            код-ревью, советовал, какие технологии использовать, чтобы научить нас
-                                            писать чистый и оптимальный код. <br />
-                                            Что мне дала работа с{" "}
-                                            <span style={{ color: "#CFF928" }}>ментором Константином:</span> <br />
-                                            1. Я научился писать чистый код.
-                                            <br />
-                                            2. Более детально разобрался с внутренней структурой фреймворка. <br />
-                                            3. Научился писать внутренние штуки такие как стартеры. <br />
-                                            4. Разобрался с устройством коллекций.
-                                            <br />
-                                            5. Узнал много нового о реальном рабочем процессе разработчика. <br />
-                                            6. Стал лучше ориентироваться в вопросах, которые задают на собеседованиях.{" "}
-                                            <br />
-                                            <br />
-                                            <span style={{ color: "#CFF928" }}>Константин</span> - отличный ментор и я
-                                            очень рад тому, что получилось поработать вместе с ним! Хотел бы сказать ему
-                                            большое спасибо за уделённое время и новые знания.
+                                            {reviews[currentIndex].review.split("\n").map((line, i) => (
+                                                <React.Fragment key={i}>
+                                                    {line}
+                                                    <br />
+                                                </React.Fragment>
+                                            ))}
                                         </p>
                                         <p className={css.junior}>
-                                            Денис,
-                                            <br />
-                                            Java-разработчик
-                                            <br />
-                                            проекта TWNSND
-                                            <br />
-                                            площадки Impet Space
+                                            {reviews[currentIndex].junior.split("\n").map((line, i) => (
+                                                <React.Fragment key={i}>
+                                                    {line}
+                                                    <br />
+                                                </React.Fragment>
+                                            ))}
                                         </p>
                                     </div>
-                                    <img src="/image/buttonRight.svg" alt="arrow right" />
+                                    <img
+                                        src="/image/buttonRight.svg"
+                                        alt="arrow right"
+                                        className={css.arrow}
+                                        onClick={handleNextComment}
+                                    />
                                 </div>
                             </div>
                         </li>
