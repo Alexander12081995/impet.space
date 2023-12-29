@@ -43,6 +43,7 @@
 .mentor {
     margin-top: 60px;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 .listReviews {
@@ -217,9 +218,6 @@
         border-radius: 12px;
     }
     .reviewJun {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         max-width: 100%;
         min-width: 100%;
         height: 360px;
